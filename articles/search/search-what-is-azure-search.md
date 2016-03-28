@@ -27,11 +27,11 @@ A opção **Sugestões de pesquisa** pode ser habilitada para barras de pesquisa
 
 **Realce de ocorrências** [permite](https://msdn.microsoft.com/library/azure/dn798927.aspx) que os usuários vejam o trecho de código de texto em cada resultado que contém as correspondências para a consulta. Você pode selecionar e escolher quais campos retornam trechos de código realçados.
 
-**Navegação facetada** é facilmente adicionada à sua página de resultados de pesquisa com a Pesquisa do Azure. Usando [apenas um único parâmetro de consulta](https://msdn.microsoft.com/library/azure/dn798927.aspx), A Pesquisa do Azure retornará todas as informações necessárias para construir uma experiência de pesquisa facetada na interface do usuário do seu aplicativo para permitir aos usuários fazer o drill-down e filtrar resultados de pesquisa (por exemplo, filtrar itens de catálogo por faixa de preços ou marca).
+**Faceted navigation** é facilmente adicionada à sua página de resultados de pesquisa com a Pesquisa do Azure. Usando [apenas um único parâmetro de consulta](https://msdn.microsoft.com/library/azure/dn798927.aspx), A Pesquisa do Azure retornará todas as informações necessárias para construir uma experiência de pesquisa facetada na interface do usuário do seu aplicativo para permitir aos usuários fazer o drill-down e filtrar resultados de pesquisa (por exemplo, filtrar itens de catálogo por faixa de preços ou marca).
 
 **Suporte** [geoespacial](search-create-geospatial.md) permite processamento, filtro e exibição de locais geográficos de maneira inteligente. A Pesquisa do Azure permite que os usuários explorarem dados com base na proximidade de um resultado de pesquisa para um local específico ou em uma região geográfica específica.
 
-**Filtros** podem ser usados para facilmente incorporar navegação facetada na interface de usuário de seu aplicativo, aprimorar a formulação de consulta e filtrar com base em critérios especificados pelo usuário ou pelo desenvolvedor. Crie filtros poderosos usando a [sintaxe de OData](https://msdn.microsoft.com/library/azure/dn798921.aspx).
+**Filtros** podem ser usados para facilmente incorporar faceted navigation na interface do usuário de seu aplicativo, aprimorar a formulação de consulta e filtrar com base em critérios especificados pelo usuário ou pelo desenvolvedor. Crie filtros poderosos usando a [sintaxe de OData](https://msdn.microsoft.com/library/azure/dn798921.aspx).
 
 ## Capacitar seus desenvolvedores com um serviço fácil de usar
 
@@ -58,9 +58,9 @@ O **Gerenciador de pesquisa** permite que emitir consultas em todos os seus índ
 ### 1\. Provisionar serviços
 Você pode criar um serviço de Pesquisa do Azure usando o [Portal do Azure](https://portal.azure.com/) ou a [API de Gerenciamento de Recursos do Azure](https://msdn.microsoft.com/library/azure/dn832684.aspx).
 
-Dependendo de como você configura o serviço, você usará o modo Gratuito que é compartilhado com outros assinantes de Pesquisa do Azure, ou o [tipo de preço](https://azure.microsoft.com/pricing/details/search/) Padrão que dedica recursos a serem usados apenas pelo seu serviço. Ao provisionar seu serviço, você também escolhe a região do data center que hospeda o serviço.
+Dependendo de como o serviço de pesquisa for configurado, você usará a camada gratuita de serviço, que é compartilhada com outros assinantes da Pesquisa do Azure, ou uma [camada paga](https://azure.microsoft.com/pricing/details/search/) que dedica recursos a serem usados apenas pelo seu serviço. Ao provisionar seu serviço, você também escolhe a região do data center que hospeda o serviço.
 
-Ao usar a Pesquisa do Azure no modo Padrão, você pode escalar seu serviço em duas dimensões: 1) adicionar réplicas para aumentar sua capacidade para lidar com cargas pesadas de consulta e 2) adicionar partições para o armazenamento de mais documentos. Ao manipular o armazenamento de documentos e a produtividade de consultas separadamente, você pode personalizar o serviço de pesquisa para suas necessidades específicas.
+Dependendo de qual camada de serviço for escolhida, é possível escalonar seu serviço em duas dimensões: 1) adicionar réplicas para aumentar sua capacidade de manipular com cargas pesadas de consulta e 2) adicionar partições para o armazenamento de mais documentos. Ao manipular o armazenamento de documentos e a produtividade de consultas separadamente, você pode personalizar o serviço de pesquisa para suas necessidades específicas.
 
 ### 2\. Criar índice
 Antes de carregar o conteúdo para o serviço de Pesquisa do Azure, você deve primeiro definir um índice de Pesquisa do Azure. Um índice é como uma tabela de banco de dados que contém os dados e pode aceitar consultas de pesquisa. Você define o esquema de índice a mapear para a estrutura dos documentos que deseja pesquisar, semelhante a campos em um banco de dados.
